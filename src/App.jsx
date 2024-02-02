@@ -11,10 +11,10 @@ export default function () {
    
       <Box sx={{m:5}} >
         <Container >
-          <Grid container justifyContent= "center" >           
+          <Grid container justifyContent= "center" >
             <Stack direction={"column"} spacing={2}>
               <h1>Counter App</h1>
-              <h2>{counter < 0 ? 0 : counter}</h2>
+              <h2>{counter}</h2>
               <Stack direction={'row'} spacing={2}>
                 <Button variant="contained" onClick={()=>setCounter(--counter)} disabled={counter === 0} >-</Button>
                 <Button variant="contained" onClick={()=>setCounter(++counter)} >+</Button>
